@@ -1,0 +1,41 @@
+<div class="modal fade" id="modalJugador" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Nuevo Buje</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form #formBuje="ngForm" (ngSubmit)="AgregarBuje(formBuje)">
+          <input type="text" name="bujeId" [(ngModel)]="this.baService.bujeSeleccionado.id">
+          
+          <div class="form-row">
+            <label for="descripcion" class="col-form-label">Descripción:</label>
+            <input type="text" class="form-control" name="descripcion" [(ngModel)]="this.baService.bujeSeleccionado.descripcion">
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="precio" class="col-form-label">Precio:</label>
+              <input type="text" class="form-control" name="precio" [(ngModel)]="this.baService.bujeSeleccionado.precio" >
+            </div>
+            <div class="form-group col-md-6">
+              <label for="codigo" class="col-form-label">Codigo:</label>
+              <input type="text" class="form-control" name="codigo" [(ngModel)]="this.baService.bujeSeleccionado.codigo">
+            </div>
+          </div>
+          <div class="form-row">
+            <label for="foto" class="col-form-label  ">Seleccione Foto:</label>
+            <input type="file" class="form-control btn-primary" name="foto" placeholder="Selecciones ">
+          </div>
+          <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="submit" class="btn btn-primary" >Agregar</button>
+        </div>
+        </form>
+      </div>
+      
+    </div>
+  </div>
+</div>

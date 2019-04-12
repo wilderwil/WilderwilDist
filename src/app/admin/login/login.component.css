@@ -1,0 +1,22 @@
+.card {
+    box-shadow: 0  10px  20px  rgba(0,0,0,0.19), 0  6px  6px  rgba(0,0,0,0.23);
+}
+.form-control.login-user{
+	border: 0 solid #fff !important;
+}
+.btn-social
+{
+	position: relative;
+	text-align: center;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	color: #fff;
+	border-color: rgba(0,0,0,0.2);
+}
+.btn-facebook{
+	background: #3b5998;
+	}
+.btn-google{
+	background: #dd4b39;
+}

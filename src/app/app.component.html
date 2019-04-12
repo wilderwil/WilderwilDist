@@ -1,0 +1,24 @@
+<!------
+
+
+
+<p>
+  Titulo {{titulo}}
+</p>
+<p>
+  1 way binding <input type="text" [ngModel]="titulo">
+</p>
+<p>
+  2 way binding: <input type="text" [(ngModel)]="titulo">
+</p>
+
+<p>
+      Evento ngModelChange: <input type="text" [ngModel]="titulo" (ngModelChange)="cambiaLado($event)">
+</p>
+
+
+---->
+<app-header></app-header>
+<div class="container">
+	<router-outlet></router-outlet>
+</div>
