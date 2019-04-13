@@ -21,7 +21,7 @@ export class ProjectListComponent implements OnInit {
   constructor(private daService:DataApiService,private baService:BujeApiService) { }
   private jugadores:JugadorInterface[];
   public jugador='';
-   private bujes:BujeInterface[];
+   public bujes:BujeInterface[];
   public buje='';
   private IVA=1.16;
   private ganancia=1.4;
