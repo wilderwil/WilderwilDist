@@ -11,7 +11,7 @@ import { NgForm } from '@angular/forms';
 })
 export class ModalComponent implements OnInit {
 
-  constructor(private daService:DataApiService,private baService:BujeApiService) { }
+  constructor(private daService:DataApiService,public baService:BujeApiService) { }
 
   ngOnInit() {
   }
