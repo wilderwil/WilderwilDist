@@ -25,7 +25,7 @@ export class ProjectListComponent implements OnInit {
   public buje='';
   private IVA=1.16;
   private ganancia=1.4;
-  private incremento=1.7;
+  private incremento=1.95;
 @ViewChild('datatable') table:ElementRef;
 dataTable:any;
 dtOptions: DataTables.Settings={};
