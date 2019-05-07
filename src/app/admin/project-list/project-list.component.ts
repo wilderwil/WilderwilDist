@@ -26,6 +26,7 @@ export class ProjectListComponent implements OnInit {
   private IVA=1.16;
   private ganancia=1.4;
   private incremento=2.12925;
+  private incremento15=1.15;
 @ViewChild('datatable') table:ElementRef;
 dataTable:any;
 dtOptions: DataTables.Settings={};
@@ -60,7 +61,7 @@ dtTrigger:Subject <any>=new Subject();
      
       bujes.map(buje=>{
         let precio=parseFloat(buje.precio);
-        precio=precio*this.IVA*this.ganancia*this.incremento;
+        precio=precio*this.IVA*this.ganancia*this.incremento*this.incremento15;
         buje.precio=precio.toString();})
       this.bujes=bujes;
       this.dtTrigger.next();
