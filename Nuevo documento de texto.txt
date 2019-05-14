@@ -1,3 +1,6 @@
+"start": "node server.js",
+ "start ":"ng serve"
+
  <!------
 
  <section class="ae-container-fluid ae-container-fluid--inner rk-portfolio animated fadeIn">
