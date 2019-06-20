@@ -79,7 +79,7 @@
         <tbody>
           <tr *ngFor="let buje of bujes;index as i">
             <td>{{buje.codigo}}</td>
-            <td >  <a class=""><img src="assets/productos/{{buje.codigo}}.jpg" ></a></td>
+            <td >  <a class=""><img src="assets/productos/{{buje.codigo}}.jpg" fallback="assets/productos/default.jpg"></a></td>
              <td>{{buje.descripcion}}</td>
             <td>{{buje.precio  | moneda}}</td>
              <td >{{buje.marca}}</td>

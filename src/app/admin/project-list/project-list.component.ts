@@ -61,7 +61,7 @@ dtTrigger:Subject <any>=new Subject();
      
       bujes.map(buje=>{
         let precio=parseFloat(buje.precio);
-        precio=precio*this.IVA*this.ganancia*this.incremento*this.incremento15;
+        precio=precio*this.IVA*this.ganancia;
         buje.precio=precio.toString();})
       this.bujes=bujes;
       this.dtTrigger.next();
