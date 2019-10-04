@@ -24,9 +24,8 @@ export class ProjectListComponent implements OnInit {
    public bujes:BujeInterface[];
   public buje='';
   private IVA=1.16;
-  private ganancia=1.4;
-  private incremento=2.12925;
-  private incremento15=1.15;
+  private ganancia=1.2;
+
 @ViewChild('datatable') table:ElementRef;
 dataTable:any;
 dtOptions: DataTables.Settings={};
